@@ -27,8 +27,8 @@ If you want to level up your coroutines knowledge, I'd recommend the following s
 
 - There's the coroutines module. I'm adding a few exercises to the main package. The main coroutines gradle imports are taken care of. Here's what you can find in the modules:
   - i_basics -> Package contains basic exploration of coroutine primitives and specific syntaxes, and some constructs that may be nice to play with!
-  - ii_channels -> Some experiments with (Hot) channels. Normally, most of what one would want to use coroutines for, flows take care of it (or wrap channels for you already). But it is good to have a cursory look at this section to acquaint yourselves
-  - iii_flow -> Some experiments with (Cold) flows.
+  - ii_channels -> Some experiments with (Hot) channels. Normally, most of what one would want to use coroutines for, flows take care of it (or wrap channels for you already). But it is good to have a cursory look at this section to acquaint yourselves. There are a few "practical" constructs as well, such as a simple Worker Pool implementation in there.
+  - iii_flow -> An exploration on flows, and many possible operations. There are some "practical" constructs at the end as well.
   - iii_flow_exercises -> Package contains exercises meant to acquaint you with Flows using RxJava or Reactor as a basis.
 
 This section will expand as soon as I find time to explore this further. Eagle eyed viewers may also notice that it borrows heavily from the coroutines by example provided by jetbrains. That is because the examples are pretty darn good!
