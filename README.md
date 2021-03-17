@@ -21,11 +21,14 @@ If you want to level up your coroutines knowledge, I'd recommend the following s
 
 - First and foremost, follow along (and experimenting with) the coroutines by example by Jetbrains: https://kotlinlang.org/docs/coroutines-guide.html
 
+- If you need a crash course of coroutines, and a really great intro to Channels and Flows, I recommend [Roman Elizarov's talk in Kotlin Conf 2019](https://www.youtube.com/watch?v=tYcqn48SMT8)
+
 - There's an official Coroutines sample project, if you like following somewhat lengthy tutorials, here: https://play.kotlinlang.org/hands-on/Introduction%20to%20Coroutines%20and%20Channels/01_Introduction
 
-- There's the coroutines module. I'm adding a few exercises to the main package. The main coroutines gradle imports are taken care of.
-  - i_syntax_playground -> Package contains some syntax, and some constructs that may be nice to play with!
-  - ii_rx_to_coroutines -> Package contains exercises meant to acquaint you with coroutine functionality using RxJava as a basis
-  - iii_reactor_to_coroutines -> Package contains exercises meant to acquaint you with coroutine functionality using reactor as a basis
-  
-This section will expand as soon as I find time to explore this further
+- There's the coroutines module. I'm adding a few exercises to the main package. The main coroutines gradle imports are taken care of. Here's what you can find in the modules:
+  - i_basics -> Package contains basic exploration of coroutine primitives and specific syntaxes, and some constructs that may be nice to play with!
+  - ii_channels -> Some experiments with (Hot) channels. Normally, most of what one would want to use coroutines for, flows take care of it (or wrap channels for you already). But it is good to have a cursory look at this section to acquaint yourselves. There are a few "practical" constructs as well, such as a simple Worker Pool implementation in there.
+  - iii_flow -> An exploration on flows, and many possible operations. There are some "practical" constructs at the end as well.
+  - iii_flow_exercises -> Package contains exercises meant to acquaint you with Flows using RxJava or Reactor as a basis.
+
+This section will expand as soon as I find time to explore this further. Eagle eyed viewers may also notice that it borrows heavily from the coroutines by example provided by jetbrains. That is because the examples are pretty darn good!
