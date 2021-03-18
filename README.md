@@ -32,3 +32,5 @@ If you want to level up your coroutines knowledge, I'd recommend the following s
   - iii_flow_exercises -> Package contains exercises meant to acquaint you with Flows using RxJava or Reactor as a basis. You can find some code in the reactor or rxjava packages, and you have to replicate the code written there in the coroutines package. Solutions are provided in the solutions package.
 
 This section will expand as soon as I find time to explore this further. Eagle eyed viewers may also notice that it borrows heavily from the coroutines by example provided by jetbrains. That is because the examples are pretty darn good!
+
+There's also, in the coroutines section, a few tests using KoTest. This can be expanded to experiment with the library. Make sure you have the KoTest plugin installed in your intellij so you can run them directly using the gutter icons.
