@@ -35,7 +35,7 @@ class DescribeSpecTest : DescribeSpec() {
             it("should work for all collection values") {
                 // Running Data driven tests based on existing collections!
                 TimerStatus.values().forAll { status ->
-                    banana(status) shouldBe true
+                    banana(status) shouldBe false
                 }
             }
         }
