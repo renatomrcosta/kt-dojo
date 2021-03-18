@@ -16,7 +16,7 @@ class DescribeSpecTest : DescribeSpec() {
         describe("Describe Spec test samples") {
             it("Should be able to launch coroutines out of the box!") {
                 withTimeout(5_000) {
-                    List(100_000) {
+                    List(100) {
                         launch {
                             delay(1_000)
                             println("Job $it Complete!")
@@ -32,10 +32,11 @@ class DescribeSpecTest : DescribeSpec() {
                     }
                 }
             }
-
-            // Running Data driven tests based on existing collections!
-            TimerStatus.values().forAll { status ->
-                banana(status) shouldBe true
+            it("should work for all collection values") {
+                // Running Data driven tests based on existing collections!
+                TimerStatus.values().forAll { status ->
+                    banana(status) shouldBe true
+                }
             }
         }
     }
