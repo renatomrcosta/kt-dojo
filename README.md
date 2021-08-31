@@ -15,6 +15,30 @@ If you want to take a practical approach through the language basics, I'd recomm
   - You can go through Kotlin Koans either via the browser (at https://play.kotlinlang.org/koans/Introduction/Hello,%20world!/Task.kt)
   - Or go to *Preferences* -> *Plugins* -> Install *EduTools*. After restarting the IDE, go to File -> Learn and Teach -> And select the Kotlin Koans project
 
+### Exercises
+
+In the last dojo sessions we explored some of the following topics. Here are some suggestions to explore them further in code:
+
+- Sealed Classes / Interfaces
+    - Implement a stopwatch. Use sealed classes to determine the possible states of the application.
+    - Tackle Day 12 of Advent of Code 2020 (https://adventofcode.com/2020/day/12). Personally, I found the construct very useful to model the solution
+
+- Extension Functions
+    - Experiment with extension function access: Write a private, package private, and public extension function in multiple packages.
+    - Write an extension function with multiple receivers (inside of a class instance, for example)
+    - Use extension functions to write your very own DSL (Domain Specific Language) to create an instance of a data class!
+
+- Type Inference / Reified
+    - Implement, without looking at the reference, the infamous fixture function (a function that takes a reified type argument and uses it as a parameter to return a new instance of that type)
+    - Implement a dummy HTTP client GET function: Given a type parameter, use a JSON string to generate a kotlin data class based on the type parameter.
+
+- Platform Types & Double Bang dangers
+    - Import a Java library containing data structures (maybe at https://github.com/akullpp/awesome-java#data-structures). Create objects of those structures, and attempt to parse them into Plain old kotlin code. Then try to make NPEs occur
+
+- Type Aliases & Inline Classes
+    - Implement a type alias for complex types (such as a Map<Int, Map<String, Set<String>>>) or something of the sort. Use it in code to see how it feels like
+    - Implement two different value classes, for different DTO domain IDs. Attempt to match them together
+
 ### Coroutines
 
 If you want to level up your coroutines knowledge, I'd recommend the following steps:
