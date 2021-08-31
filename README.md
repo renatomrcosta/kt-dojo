@@ -23,6 +23,12 @@ In the last dojo sessions we explored some of the following topics. Here are som
     - Implement a stopwatch. Use sealed classes to determine the possible states of the application.
     - Tackle Day 12 of Advent of Code 2020 (https://adventofcode.com/2020/day/12). Personally, I found the construct very useful to model the solution
 
+- Big Collections / Sequences
+    - Generate a sequence with a few billion items. Fiddle around with the operators to figure out how to properly collect, map, filter, take, drop, in different formats.
+    - Create an INFINITE sequence
+    - Use an infinite sequence to generate fibonnacci numbers
+    - Use an infinite sequence to find prime numbers
+
 - Extension Functions
     - Experiment with extension function access: Write a private, package private, and public extension function in multiple packages.
     - Write an extension function with multiple receivers (inside of a class instance, for example)
